@@ -4,7 +4,7 @@
 
 - name: copy index.html
   copy:
-    src: index.html
+    src: "{{ env }}/index.html"
     dest: /var/www/html/index.nginx-debian.html
     owner: root
     group: root

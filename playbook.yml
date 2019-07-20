@@ -5,6 +5,8 @@
   connection: local
   become: true
   become_method: sudo
+  vars:
+    env: "dev"
   roles:
     - common
     - nginx
